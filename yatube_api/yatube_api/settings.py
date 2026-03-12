@@ -98,7 +98,7 @@ STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
 REST_FRAMEWORK = {
     # аутентифицированные пользователи могут пользоваться API, остальные - нет
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
     # аутентификация по JWT-токену
     'DEFAULT_AUTHENTICATION_CLASSES': [
