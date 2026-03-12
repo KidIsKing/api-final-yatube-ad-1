@@ -3,6 +3,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import PostViewSet, GroupViewSet, FollowViewSet, CommentViewSet
 
+
 # создаём объект роутера и регистрируем вьюсеты для маршрутов
 router = DefaultRouter()
 
