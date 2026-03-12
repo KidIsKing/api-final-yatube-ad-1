@@ -13,6 +13,6 @@ urlpatterns = [
         name='redoc'
     ),
     # эндпоинты для аутентификации (токена)
-    path('', include('djoser.urls')),
-    path('', include('djoser.urls.jwt')),
+    path('api/v1/', include('djoser.urls')),
+    path('api/v1/', include('djoser.urls.jwt')),
 ]
