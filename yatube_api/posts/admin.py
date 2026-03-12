@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Group
+
+
+# регистрируем модель групп в админке, чтобы создавать их
+admin.site.register(Group)
